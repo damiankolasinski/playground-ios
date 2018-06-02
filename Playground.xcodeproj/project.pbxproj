@@ -26,6 +26,7 @@
 		2D02470C20C339EB00A432FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D02471420C33D5B00A432FC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		2D02471520C33D5B00A432FC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		2D02472C20C3457E00A432FC /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		2D0246F420C339E900A432FC = {
 			isa = PBXGroup;
 			children = (
+				2D02472C20C3457E00A432FC /* MyPlayground.playground */,
 				2D0246FF20C339E900A432FC /* Playground */,
 				2D0246FE20C339E900A432FC /* Products */,
 				2D02471320C33D5B00A432FC /* Frameworks */,
