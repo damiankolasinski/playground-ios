@@ -14,7 +14,34 @@
 		2D02470B20C339EB00A432FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D02470920C339EB00A432FC /* LaunchScreen.storyboard */; };
 		2D02471620C33D5B00A432FC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D02471420C33D5B00A432FC /* RxCocoa.framework */; };
 		2D02471720C33D5B00A432FC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D02471520C33D5B00A432FC /* RxSwift.framework */; };
+		2D02473620C3485D00A432FC /* playgroundUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D02473420C3485D00A432FC /* playgroundUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D02473920C3485D00A432FC /* playgroundUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D02473220C3485C00A432FC /* playgroundUI.framework */; };
+		2D02473B20C3485D00A432FC /* playgroundUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D02473220C3485C00A432FC /* playgroundUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D02473720C3485D00A432FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D0246F520C339E900A432FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02473120C3485C00A432FC;
+			remoteInfo = playgroundUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D02473A20C3485D00A432FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2D02473B20C3485D00A432FC /* playgroundUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2D0246FD20C339E900A432FC /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +54,9 @@
 		2D02471420C33D5B00A432FC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		2D02471520C33D5B00A432FC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		2D02472C20C3457E00A432FC /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2D02473220C3485C00A432FC /* playgroundUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = playgroundUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02473420C3485D00A432FC /* playgroundUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = playgroundUI.h; sourceTree = "<group>"; };
+		2D02473520C3485D00A432FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +65,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D02471620C33D5B00A432FC /* RxCocoa.framework in Frameworks */,
+				2D02473920C3485D00A432FC /* playgroundUI.framework in Frameworks */,
 				2D02471720C33D5B00A432FC /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02472E20C3485C00A432FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +85,7 @@
 			children = (
 				2D02472C20C3457E00A432FC /* MyPlayground.playground */,
 				2D0246FF20C339E900A432FC /* Playground */,
+				2D02473320C3485C00A432FC /* playgroundUI */,
 				2D0246FE20C339E900A432FC /* Products */,
 				2D02471320C33D5B00A432FC /* Frameworks */,
 			);
@@ -56,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				2D0246FD20C339E900A432FC /* Playground.app */,
+				2D02473220C3485C00A432FC /* playgroundUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,7 +122,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2D02473320C3485C00A432FC /* playgroundUI */ = {
+			isa = PBXGroup;
+			children = (
+				2D02473420C3485D00A432FC /* playgroundUI.h */,
+				2D02473520C3485D00A432FC /* Info.plist */,
+			);
+			path = playgroundUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2D02472F20C3485C00A432FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02473620C3485D00A432FC /* playgroundUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		2D0246FC20C339E900A432FC /* Playground */ = {
@@ -93,15 +153,35 @@
 				2D0246FA20C339E900A432FC /* Frameworks */,
 				2D0246FB20C339E900A432FC /* Resources */,
 				2D02471220C33C9A00A432FC /* Carthage */,
+				2D02473A20C3485D00A432FC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2D02473820C3485D00A432FC /* PBXTargetDependency */,
 			);
 			name = Playground;
 			productName = Playground;
 			productReference = 2D0246FD20C339E900A432FC /* Playground.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2D02473120C3485C00A432FC /* playgroundUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02473E20C3485D00A432FC /* Build configuration list for PBXNativeTarget "playgroundUI" */;
+			buildPhases = (
+				2D02472D20C3485C00A432FC /* Sources */,
+				2D02472E20C3485C00A432FC /* Frameworks */,
+				2D02472F20C3485C00A432FC /* Headers */,
+				2D02473020C3485C00A432FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = playgroundUI;
+			productName = playgroundUI;
+			productReference = 2D02473220C3485C00A432FC /* playgroundUI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -114,6 +194,9 @@
 				ORGANIZATIONNAME = "Damian Kolasiński";
 				TargetAttributes = {
 					2D0246FC20C339E900A432FC = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					2D02473120C3485C00A432FC = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
 				};
@@ -132,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				2D0246FC20C339E900A432FC /* Playground */,
+				2D02473120C3485C00A432FC /* playgroundUI */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +228,13 @@
 				2D02470B20C339EB00A432FC /* LaunchScreen.storyboard in Resources */,
 				2D02470820C339EB00A432FC /* Assets.xcassets in Resources */,
 				2D02470620C339E900A432FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02473020C3485C00A432FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +269,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2D02472D20C3485C00A432FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D02473820C3485D00A432FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02473120C3485C00A432FC /* playgroundUI */;
+			targetProxy = 2D02473720C3485D00A432FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2D02470420C339E900A432FC /* Main.storyboard */ = {
@@ -356,6 +462,60 @@
 			};
 			name = Release;
 		};
+		2D02473C20C3485D00A432FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = playgroundUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.damiankolasinski.playgroundUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2D02473D20C3485D00A432FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = playgroundUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.damiankolasinski.playgroundUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,6 +533,15 @@
 			buildConfigurations = (
 				2D02471020C339EB00A432FC /* Debug */,
 				2D02471120C339EB00A432FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02473E20C3485D00A432FC /* Build configuration list for PBXNativeTarget "playgroundUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02473C20C3485D00A432FC /* Debug */,
+				2D02473D20C3485D00A432FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
